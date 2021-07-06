@@ -1,0 +1,143 @@
+/* FUENTES */
+@font-face {
+    font-family: "fajala";
+    src: url(../fonts/fuente.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+/* GENERALES */
+html {
+    box-sizing: border-box;
+    font-family: "fajala";
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*{
+  text-decoration: none;  
+}
+body {
+    background: url("../img/cubes.png") #F4F4F4F4; 
+}
+#header {
+    background-color: #666666f4;
+}
+.contenido-header {
+    width: 80%;
+    height: auto;
+    background: transparent;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav ul{
+    display: flex;
+}
+#nav li {
+    list-style: none;
+    margin-right: 20px;
+}
+#nav li:last-of-type{
+    margin-right: 0;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+li a:hover {
+    text-shadow: -2px -2px 0 black;
+}
+#logo a{
+    color: white;
+    font-family: "fajala", Helvetica;
+    font-size: 35px;
+    text-shadow: 0 2px 2px black;
+    transition: all 300ms;
+}
+#logo a:hover {
+    cursor: pointer;
+    text-shadow: -2px -2px 0 black;
+}
+.container {
+    width: 80%;
+    height: auto;
+    background: transparent;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 50px;
+}
+.campo {
+    display: block;
+    margin-top: 10px;
+}
+.principal {
+    background-color: rgb(255, 255, 255);
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+.contenido-principal {
+    padding: 20px;
+}
+.contenido-principal h1 {
+    font-size: 34px;
+    color: #444;
+    text-shadow: 1px 1px #ccc;
+    letter-spacing: 1px;
+}
+.contenido-principal h2 {
+    font-size: 20px;
+    color: rgb(91, 91, 255);
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.entrada a p {
+    color: rgb(128, 128, 128);
+}
+.ver-todas a{
+    background-color: rgb(91, 91, 255);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #999;
+    transition: all 200ms;
+}
+.ver-todas a:hover {
+    background-color: rgb(144, 144, 255);
+}
+#pie {
+    text-align: center;
+}
+label,
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    display: block;
+    width: 95%;
+}
+.block-aside {
+    background-color: white;
+    padding: 3px 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px #999;
+}
+input[type="button"],
+input[type="submit"]{
+    margin: 5px 0;
+    padding: 5px 15px;
+    background-color: rgb(91, 91, 255);
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    transition: all 200ms;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover{
+    background-color: rgb(144, 144, 255);
+    cursor: pointer;
+}
